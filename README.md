@@ -1,2 +1,2 @@
 # Debugging-Magus
-This is the initiated README for team Debugging Magus, Please edit this as you build your project
+This is the Doctor-Patient communication portal where patients can search doctors and book appointments and can virtually connect in this pandemic situation and doctors can prescribe meds to patients.
