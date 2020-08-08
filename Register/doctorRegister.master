@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
-		<link href="assets/img/favicon.png" rel="icon">
+		<link href="../Login/Meditraxxlogo2.jpg" rel="icon">
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -28,49 +28,6 @@
 		<![endif]-->
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style>
-       .button {
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #2196F3;
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 23px;
-  padding: 10px;
-  width: 170px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 20px;
-  margin-left: 110px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-    </style>
  
  
 </head>
@@ -91,13 +48,13 @@
 							</span>
 						</a>
 						<a href="index-2.html" class="navbar-brand logo">
-							<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+							<img src="Meditraxx logo.jpeg"class="img-fluid" alt="Logo">
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
 						<div class="menu-header">
 							<a href="index-2.html" class="menu-logo">
-								<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+								<img src="Meditraxx logo.jpeg" class="img-fluid" alt="Logo">
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
 								<i class="fas fa-times"></i>

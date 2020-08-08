@@ -14,7 +14,10 @@ border-color:lightgreen;
 background-color:white;
 color:lightgreen;
     }
-
+    textbox{
+            border-bottom-color:lightgray;
+            border-top-color:lightgray;
+        }
     
 </style>
     </asp:Content>
@@ -22,9 +25,9 @@ color:lightgreen;
 </asp:Content>
 
 <asp:Content ID="Content3" runat="server" contentplaceholderid="ContentPlaceHolder2">
-    <asp:TextBox ID="TextBox1" runat="server" Height="46px" Width="184px" placeholder="username"></asp:TextBox>
+    <asp:TextBox ID="TextBox1" runat="server" Height="46px" Width="184px" placeholder="username" CssClass="textbox"></asp:TextBox>
     &nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="TextBox6" runat="server" Height="46px" Width="180px" placeholder="password" TextMode="Password"></asp:TextBox>
+    <asp:TextBox ID="TextBox6" runat="server" Height="46px" Width="180px" placeholder="password" TextMode="Password" CssClass="textbox"></asp:TextBox>
     <br />
     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="Field Required!" ForeColor="Red"></asp:RequiredFieldValidator>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,7 +36,7 @@ color:lightgreen;
     <br />
 </asp:Content>
 <asp:Content ID="Content4" runat="server" contentplaceholderid="ContentPlaceHolder3">
-    <asp:TextBox ID="TextBox2" runat="server" Height="46px" Width="386px" placeholder="email" TextMode="Email"></asp:TextBox>
+    <asp:TextBox ID="TextBox2" runat="server" Height="46px" Width="386px" placeholder="email" TextMode="Email" CssClass="textbox"></asp:TextBox>
     <br />
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox2" ErrorMessage="Field Required!" ForeColor="Red"></asp:RequiredFieldValidator>
     <br />
@@ -62,15 +65,16 @@ color:lightgreen;
      </asp:Content>
 
 <asp:Content ID="Content5" runat="server" contentplaceholderid="ContentPlaceHolder5">
-    <asp:TextBox ID="TextBox3" runat="server" Height="46px" Width="386px" placeholder="Clinic / Hospital address"></asp:TextBox>
-    &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="Field Required!" ForeColor="Red"></asp:RequiredFieldValidator>
+    <asp:TextBox ID="TextBox3" runat="server" Height="46px" Width="386px" placeholder="Clinic / Hospital address" CssClass="textbox"></asp:TextBox>
+    &nbsp;<br />
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox3" ErrorMessage="Field Required!" ForeColor="Red"></asp:RequiredFieldValidator>
     &nbsp;
     <br />
 </asp:Content>
 
 <asp:Content ID="Content6" runat="server" contentplaceholderid="ContentPlaceHolder6">
-    <asp:TextBox ID="TextBox8" runat="server" Height="46px" Width="184px" placeholder="qualification"></asp:TextBox>
-    &nbsp;&nbsp; <asp:TextBox ID="TextBox9" runat="server" Height="46px" Width="185px" placeholder="Speciality"></asp:TextBox>
+    <asp:TextBox ID="TextBox8" runat="server" Height="46px" Width="184px" placeholder="qualification" CssClass="textbox"></asp:TextBox>
+    &nbsp;&nbsp; <asp:TextBox ID="TextBox9" runat="server" Height="46px" Width="185px" placeholder="Speciality" CssClass="textbox"></asp:TextBox>
     <br />
     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox8" ErrorMessage="Field Required!" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
