@@ -38,7 +38,7 @@ public partial class Register_patientregister : System.Web.UI.Page
             string q = "insert into Patient(Patname,Patpwd,Patemail,stateid,cityid )values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + DropDownList1.SelectedValue + "', '"+ DropDownList2.SelectedValue + "')";
             if (Class1.execute(q))
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Registered successfully... Have a nice day!');window.location ='../Patient/search.aspx';", true);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Registered successfully... Have a nice day!');window.location ='../Login/loginpage.aspx';", true);
                 clrtxt();
             }
             else
