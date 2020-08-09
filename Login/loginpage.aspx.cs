@@ -28,6 +28,7 @@ public partial class Login_loginpage : System.Web.UI.Page
     {
         string q = "select * from Admin where Adminname='" + TextBox1.Text + "' and Adminpwd='" + TextBox2.Text + "'";
         DataSet ds = Class1.filldata(q);
+        Session["Adminid"] = ds.Tables[0].Rows[0][0].ToString();
         if (ds.Tables[0].Rows.Count > 0)
         {
             Response.Redirect("/Admin/index1.aspx");
@@ -38,6 +39,7 @@ public partial class Login_loginpage : System.Web.UI.Page
     {
         string q1 = "select * from Doctor where Docname= '" + TextBox1.Text + "' and Docpwd='" + TextBox2.Text + "'";
         DataSet ds = Class1.filldata(q1);
+        Session["Docid"] = ds.Tables[0].Rows[0][0].ToString();
         if (ds.Tables[0].Rows.Count > 0)
         {
             Response.Redirect("/Doctor/Dashboard.aspx");
@@ -49,9 +51,10 @@ public partial class Login_loginpage : System.Web.UI.Page
     {
         string q2 = " select * from Patient where Patname='" + TextBox1.Text + "' and patpwd='" + TextBox2.Text + "'";
         DataSet ds = Class1.filldata(q2);
+        Session["Patid"] = ds.Tables[0].Rows[0][0].ToString();
         if (ds.Tables[0].Rows.Count > 0)
         {
-            Response.Redirect("/Patient/search.aspx");
+            Response.Redirect("/Patient/Home.aspx");
         }
     }
 }
