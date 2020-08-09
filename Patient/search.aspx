@@ -60,7 +60,7 @@
                                                 <h4 class="doc-name"><asp:Label ID="Label1" runat="server" Text='<%# Eval("Docname") %>'></asp:Label></h4>
 												<p class="doc-speciality">
                                                 <asp:Label ID="Label2" runat="server" Text='<%# Eval("Doceducationdegree") %>'></asp:Label></p>
-                                                    <h5 class="doc-department"><asp:Label ID="Label3" runat="server" Text='<%# Eval("Docspeciality") %>'></asp:Label></h5>
+                                                    <h5 class="doc-department"><asp:Label ID="Label3" runat="server" Text='<%# Eval("SP_Name") %>'></asp:Label></h5>
                                                     <div class="rating">
 													<span class="d-inline-block average-rating">Rating : <asp:Label ID="Label4" runat="server" Text='<%# Eval("Docreview") %>'></asp:Label>/5</span>
 												</div>

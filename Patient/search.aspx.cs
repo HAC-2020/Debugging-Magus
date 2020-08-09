@@ -67,10 +67,13 @@ public partial class Patient_search : System.Web.UI.Page
                 speciality += "'" + CheckboxList2.Items[i].Text + "',";
             }
         }
-        
 
-        
-        string q1 = "select * from Doctor";
+        speciality = speciality.Remove(speciality.Length - 1, 1);
+        string qsid= "select * from Speciality where SP_Name in (" + speciality + ")";
+        DataSet dsqsid = Class1.filldata(qsid);
+
+        //ds.Tables[0].Rows[0][0].ToString();
+        string q1 = "select D.*,S.SP_Name from Doctor D,Speciality S where D.Docspeciality=S.SP_Id";
         if (gender == "" && speciality == "")
         {
 
@@ -78,18 +81,18 @@ public partial class Patient_search : System.Web.UI.Page
         else if (gender != "" && speciality == "")
         {
             gender = gender.Remove(gender.Length - 1, 1);
-            q1 += " where Docgender in (" + gender + ")";
+            q1 += " and Docgender in (" + gender + ")";
         }
         else if (gender == "" && speciality != "")
         {
             speciality = speciality.Remove(speciality.Length - 1, 1);
-            q1 += " where Docspeciality in (" + speciality + ")";
+            q1 += " and Docspeciality in (" + dsqsid.Tables[0].Rows[0][0].ToString() + ")";
         }
         else if (gender != "" && speciality != "")
         {
             gender = gender.Remove(gender.Length - 1, 1);
             speciality = speciality.Remove(speciality.Length - 1, 1);
-            q1 += " where Docgender in (" + gender + ") and Docspeciality in (" + speciality + ")";
+            q1 += " and Docgender in (" + gender + ") and Docspeciality in (" + dsqsid.Tables[0].Rows[0][0].ToString() + ")";
         }
         DataSet ds1 = Class1.filldata(q1);
         DataList1.DataSource = ds1;
