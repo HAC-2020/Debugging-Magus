@@ -6,4 +6,4 @@ connect in this pandemic situation and doctors can prescribe meds to patients. P
   <p>- The most important benefits of this site is that patient can consult online instead of visiting hospital/clinic and virtually connecting with doctor<p>
   -  Patient can book for appointment in prior.
   <p>- user needs to register first and then can search for doctors, can consult them, can share their report and if neccesary can also book aapointment.</p>
-  <p>- same goes for doctor they need to register first, verify themselves and need to buy a subscription package after free trial of 7 days.</p> 
+  <p>- same goes for doctor and they need to register first, verify themselves and need to buy a subscription package after free trial of 7 days.</p> 
